@@ -1,0 +1,67 @@
+.heading1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.heading2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.heading3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.heading4 {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+.btn {
+  height: 60px;
+  width: 170px;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  box-shadow: 9px 9px 15px #33333333;
+  background-color: var(--background-secondry);
+  & img {
+    height: 3rem;
+  }
+
+  &:hover {
+    background-color: var(--background);
+    box-shadow: 9px 9px 15px #33333355;
+  }
+}
+.image {
+  background-image: url(Background.svg);
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+.cards-container {
+  scroll-snap-type: mandatory;
+  scroll-snap-stop: start;
+}
+.cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.reviews-container {
+  scroll-snap-type: x mandatory;
+  scroll-snap-align: revert;
+}
+.reviews-cards {
+  user-select: none;
+  scroll-snap-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .image {
+    background-image: url(BackgroundWrapper.svg);
+    background-position: bottom center;
+    background-size: cover;
+  }
+  .heading1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Potta+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap");
+
+@import 'tailwindcss';
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2DBEE6;
+  --primary-hover: #2dbee6c4;
+  --primary-transparent: #E8F3FE;
+  --background: #F2F6F3;
+  --background-secondry: #ffffff;
+  --secondry-color: #FFFFFF;
+  --paragraph-color: #111111;
+  --heading: #111111;
+  --padding: 76px 36px;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: 'Outfit';
+  background-color: var(--background);
+  color: var(--paragraph-color);
+  scroll-behavior: smooth;
+}
+body::selection {
+  color: #ffffff;
+  background-color: var(--primary-color);
+}
+body.active{ 
+  overflow: hidden;
+}
+.hero {
+  height: auto;
+  width: 100%;
+}
+

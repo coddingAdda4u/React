@@ -1,0 +1,34 @@
+
+.footer {
+  background-color: var(--background);
+}
+.footer button {
+  background-color: var(--background-secondry);
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 2px solid transparent;
+  transition: 0.2s;
+
+  &:hover {
+    border-color: #11111142;
+  }
+}
+.footer button img {
+  height: 1rem;
+}
+.footer h6:not(.desc h6) {
+  font-size: 0.8rem;
+  padding: 0.7rem;
+  align-content: center;
+  text-align: center;
+  background-color: var(--background-secondry);
+}
+.desc {
+  padding: 36px;
+}
+
+@media screen and (max-width: 768px) {
+  .desc {
+    padding: 16px;
+  }
+}
