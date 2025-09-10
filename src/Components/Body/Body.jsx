@@ -53,7 +53,6 @@ function Carousel({ target }) {
       left: 380,
       behavior: 'smooth'
     })
-    console.log("dklsfshksl");
   }
   return (
     <>
@@ -162,7 +161,7 @@ const Body = () => {
         </div>
       </section>
       <Review />
-      <Form />
+      {/* <Form /> */}
       <Footer />
     </>
   )
