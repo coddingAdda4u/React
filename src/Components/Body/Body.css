@@ -1,3 +1,6 @@
+@import "./Animation.css";
+@import "../../../node_modules/swiper/modules/navigation.css";
+
 .heading1 {
   font-size: 4rem;
   font-weight: 700;
@@ -6,10 +9,12 @@
   font-size: 1.4rem;
   font-weight: 600;
 }
+
 .heading3 {
   font-size: 1.1rem;
   font-weight: 600;
 }
+
 .heading4 {
   font-size: 0.9rem;
   font-weight: normal;
@@ -53,6 +58,26 @@
   scroll-snap-align: center;
 }
 
+/* Animations */
+#heading1 {
+  animation: moveElement 1s;
+}
+#heading2 {
+  animation: moveElement 1.4s;
+}
+#heading3 {
+  animation: moveElement 0.6s;
+}
+#browse-btn {
+  animation: moveElement 1.8s;
+}
+
+.swiper-button-prev {
+  left: 0 !important;
+}
+.swiper-button-next {
+  right: 0 !important;
+}
 
 @media screen and (max-width: 768px) {
   .image {

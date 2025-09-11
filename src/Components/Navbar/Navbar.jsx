@@ -46,16 +46,15 @@ const Navbar = () => {
                   setActiveLink(link)
                 }} title={link}>
                   <a href="#">
-                    {link}
+                    <h3>
+                      {link}
+                    </h3>
                   </a>
                 </li>
               ))}
             </ul>
-            <a href="#" className="login-btn">
-              Log In
-            </a>
           </div>
-          <a href="#" className="login-btn" title='Contact'>
+          <a href="#" className="login-btn hover:scale-[1.02] hover:shadow-xl transition-all" title='Contact'>
             Contact
           </a>
 
