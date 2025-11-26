@@ -1,0 +1,71 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ height: 100%;
+ width: 100%;
+ background: #000;
+ color: whitesmoke;
+}
+a {
+ text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+ul li {
+ list-style-type: none;
+}
+.container {
+ height: fit-content;
+ width: 100%;
+}
+h1 {
+  text-align: center;
+  margin: 2rem;
+}
+h3 {
+  margin: 1rem;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+input[type="text"] {
+  padding: 10px;
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.todo-container li {
+  width: 500px;
+  padding: 10px 1rem;
+  background: #434343;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-container li button {
+  height: 25px;
+  width: 25px;
+  background: #ff4d4d;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
